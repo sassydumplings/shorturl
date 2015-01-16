@@ -20,3 +20,11 @@ Shorl will generate a shortened URL from an URL:
 
 * Some styling was done using Twitter Bootstrap
 
+Enhancements to add soon:
+
+* Fix Heroku and Twitter Bootstrap issue - http://stackoverflow.com/questions/16271696/cant-get-css-working-on-heroku-using-rails-4-with-bootstrap-saas-gem
+
+* Add lookup of Full URL to see if shortened URL is already available, pass the existing short URL
+
+* OR instead of lookup - expire the the short url and regenerate every time
+
