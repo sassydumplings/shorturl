@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :full %><br>
-    <%= f.text_field :full %>
+  <div class="input-group">
+    <%= f.label :full, class: "sr-only" %>
+    <%= f.text_field :full, placeholder: "Full URL", class: "form-control" %>
+    <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Create Short url</button>
+    </span>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

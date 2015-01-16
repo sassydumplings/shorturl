@@ -1,14 +1,14 @@
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Full:</strong>
-  <%= @short_url.full %>
-</p>
+  <p>
+    <strong>Full:</strong>
+    <%= link_to @short_url.full, @short_url.full %>
+  </p>
 
-<p>
-  <strong>Short:</strong>
-  <%= current_host + @short_url.short %>
-</p>
+  <p>
+    <strong>Short:</strong>
+    <%= link_to current_host + @short_url.short, current_host + @short_url.short %>
+  </p>
 
-<%= link_to 'Edit', edit_short_url_path(@short_url) %> |
-<%= link_to 'Back', short_urls_path %>
+  <%= link_to 'Edit', edit_short_url_path(@short_url) %> |
+  <%= link_to 'Back', short_urls_path %>
