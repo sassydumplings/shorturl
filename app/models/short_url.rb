@@ -1,5 +1,4 @@
 class ShortUrl < ActiveRecord::Base
-  validates_uniqueness_of :short
   validates_presence_of :full, :short
   validates_format_of :full,
     with: /\Ahttps?:\/\/([\da-z\.]+)\.([a-z\.]{2,6})([\/\w \.])\/?\z/,
