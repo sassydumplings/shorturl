@@ -7,7 +7,7 @@
 
 <p>
   <strong>Short:</strong>
-  <%= @short_url.short %>
+  <%= current_host + @short_url.short %>
 </p>
 
 <%= link_to 'Edit', edit_short_url_path(@short_url) %> |
