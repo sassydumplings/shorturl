@@ -1,28 +1,22 @@
-== README
+Shorl will generate a shortened URL from an URL:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Enter URL to generate shortened URL
 
-Things you may want to cover:
+* click on shortened URL to redirect or copy to paste into browser
 
-* Ruby version
+* It is deployed at http://shorl.herokuapp.com/
 
-* System dependencies
+* The (http://) protocol will be prepended to a valid HTTP address if missing
 
-* Configuration
+* The shortened URL is built with a secure random generator that is URL safe
 
-* Database creation
+* Build on Ruby 2.2 & Rails 4.2
 
-* Database initialization
+* Database is PostGres (gem version 0.18.1)
 
-* How to run the test suite
+* Unit tests were written using RSpec 3.1.7
 
-* Services (job queues, cache servers, search engines, etc.)
+* Integration tests were written Capybara 2.4.4
 
-* Deployment instructions
+* Some styling was done using Twitter Bootstrap
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
