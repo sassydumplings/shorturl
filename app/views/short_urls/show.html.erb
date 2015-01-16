@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full:</strong>
+  <%= @short_url.full %>
+</p>
+
+<p>
+  <strong>Short:</strong>
+  <%= @short_url.short %>
+</p>
+
+<%= link_to 'Edit', edit_short_url_path(@short_url) %> |
+<%= link_to 'Back', short_urls_path %>
