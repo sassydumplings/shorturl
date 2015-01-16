@@ -1,6 +1,5 @@
 class ShortUrlsController < ApplicationController
   before_action :set_short_url, only: [:show, :edit, :update, :destroy]
-  helper_method :current_host
 
   # GET /short_urls
   # GET /short_urls.json
@@ -67,12 +66,8 @@ class ShortUrlsController < ApplicationController
       full_url = short_url.full
       redirect_to full_url
     else
-      render status: 404
+      raise ActionController::RoutingError.new("Not Found")
     end
-  end
-
-  def current_host
-    "http://#{request.host}:#{request.port}/"
   end
 
   private
